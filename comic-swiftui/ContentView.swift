@@ -21,22 +21,23 @@ struct ContentView: View {
             ScrollView(.horizontal) {
                 ScrollViewReader { _ in
                     LazyHStack {
-                        Text("hihihih ihi")
+                        Button("hihi") {}
+                            .accentColor(.black)
 
-                        Text("hihihihihi")
-
-                        Text("hihihihihi")
-                        Text("hihihihihi")
-                        Text("hihihihihi")
-                        Text("hihihihihi")
-                        Text("hihihihihi")
-                        Text("hihihihihi")
+                        Button("hihi") {}
+                            .accentColor(.black)
+                        
+                        Button("hihi") {}
+                            .accentColor(.black)
+                        Button("hihi") {}
+                            
+                            .accentColor(.black)
                         Spacer().frame(width: 20)
                     }
                 }
             }
             .frame(height: 44)
-            .background(Color.gray)
+            .background(Color.gray.opacity(0.2))
 
             ScrollView {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
