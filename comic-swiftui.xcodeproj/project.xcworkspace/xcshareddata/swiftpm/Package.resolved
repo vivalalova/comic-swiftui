@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "FetchSwift",
+        "repositoryURL": "git@github.com:vivalalova/FetchSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "29d4065f61a32658378b66c3f331e737e478327c",
+          "version": "1.0.3"
+        }
+      },
+      {
+        "package": "Kingfisher",
+        "repositoryURL": "git@github.com:onevcat/Kingfisher.git",
+        "state": {
+          "branch": null,
+          "revision": "bbc4bc4def7eb05a7ba8e1219f80ee9be327334e",
+          "version": "6.2.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
