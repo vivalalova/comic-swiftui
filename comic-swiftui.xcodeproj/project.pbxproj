@@ -14,6 +14,7 @@
 		9E423AD625FDF03600140C07 /* FetchSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9E423AD525FDF03600140C07 /* FetchSwift */; };
 		9E423AD825FDF04300140C07 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E423AD725FDF04300140C07 /* API.swift */; };
 		9EBFA42E25FE562F0099E39E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9EBFA42D25FE562F0099E39E /* Kingfisher */; };
+		9EBFA43025FE5FFB0099E39E /* CatalogItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBFA42F25FE5FFB0099E39E /* CatalogItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9E423ACC25FDEC2A00140C07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9E423ACE25FDEC2A00140C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E423AD725FDF04300140C07 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		9EBFA42F25FE5FFB0099E39E /* CatalogItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				9E423AC525FDEC2900140C07 /* comic_swiftuiApp.swift */,
 				9E423AD725FDF04300140C07 /* API.swift */,
 				9E423AC725FDEC2900140C07 /* ContentView.swift */,
+				9EBFA42F25FE5FFB0099E39E /* CatalogItemView.swift */,
 				9E423AC925FDEC2A00140C07 /* Assets.xcassets */,
 				9E423ACE25FDEC2A00140C07 /* Info.plist */,
 				9E423ACB25FDEC2A00140C07 /* Preview Content */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E423AC825FDEC2900140C07 /* ContentView.swift in Sources */,
+				9EBFA43025FE5FFB0099E39E /* CatalogItemView.swift in Sources */,
 				9E423AD825FDF04300140C07 /* API.swift in Sources */,
 				9E423AC625FDEC2900140C07 /* comic_swiftuiApp.swift in Sources */,
 			);

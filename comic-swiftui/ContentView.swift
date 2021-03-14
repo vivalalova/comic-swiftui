@@ -39,32 +39,10 @@ struct ContentView: View {
             .background(Color.gray)
 
             ScrollView {
-                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 12) {
+                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
                     ForEach(self.model.catalogs) { catalog in
-                        VStack {
-                            VStack {
-                                KFImage(catalog.thumbnail?.url)
-                                    .frame(height: 88)
-                                    .frame(maxWidth: .infinity)
-                                    .padding(4)
-
-                                Text(catalog.title ?? "")
-                                    .font(.title3)
-                                    .bold()
-
-                                Text(catalog.welcomeDescription ?? "")
-                                    .font(.caption)
-                                    .foregroundColor(.gray)
-                                    .lineLimit(2)
-                            }.padding(8)
-                        }
-
-                        .background(Color.white)
-                        .clipped()
-                        .cornerRadius(4)
-                        .shadow(radius: 2)
+                        CatalogItemView(catalog: catalog)
                     }
-                    .padding([.top, .bottom], 12)
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
