@@ -64,6 +64,7 @@ struct ContentView: View {
                         .cornerRadius(4)
                         .shadow(radius: 2)
                     }
+                    .padding([.top, .bottom], 12)
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
