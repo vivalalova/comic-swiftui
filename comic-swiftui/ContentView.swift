@@ -46,6 +46,7 @@ struct ContentView: View {
                                 KFImage(catalog.thumbnail?.url)
                                     .frame(height: 88)
                                     .frame(maxWidth: .infinity)
+                                    .padding(4)
 
                                 Text(catalog.title ?? "")
                                     .font(.title3)
@@ -53,6 +54,7 @@ struct ContentView: View {
 
                                 Text(catalog.welcomeDescription ?? "")
                                     .font(.caption)
+                                    .foregroundColor(.gray)
                                     .lineLimit(2)
                             }.padding(8)
                         }
