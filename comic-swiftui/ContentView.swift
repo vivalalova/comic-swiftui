@@ -21,19 +21,12 @@ struct ContentView: View {
             ScrollView(.horizontal) {
                 ScrollViewReader { _ in
                     LazyHStack {
-                        Button("hihi") {}
-                            .accentColor(.black)
+                        CategoryBtn()
+                        CategoryBtn()
+                        CategoryBtn()
+                        CategoryBtn()
 
-                        Button("hihi") {}
-                            .accentColor(.black)
-                        
-                        Button("hihi") {}
-                            .accentColor(.black)
-                        Button("hihi") {}
-                            
-                            .accentColor(.black)
-                        Spacer().frame(width: 20)
-                    }
+                    }.padding([.leading, .trailing], 20)
                 }
             }
             .frame(height: 44)
@@ -44,13 +37,14 @@ struct ContentView: View {
                     ForEach(self.model.catalogs) { catalog in
                         CatalogItemView(catalog: catalog)
                     }
-                }
+                }.padding(.bottom, 42)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .padding(4)
         }.onAppear {
             self.model.load()
         }
+        .edgesIgnoringSafeArea(.bottom)
     }
 }
 
