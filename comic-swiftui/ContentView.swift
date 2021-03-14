@@ -17,8 +17,8 @@ struct ContentView: View {
     @StateObject var model = ViewModel()
 
     var body: some View {
-        VStack {
-            ScrollView(.horizontal, showsIndicators: false, content: {
+        VStack(spacing: 0) {
+            ScrollView(.horizontal) {
                 ScrollViewReader { _ in
                     LazyHStack {
                         Text("hihihih ihi")
@@ -34,9 +34,9 @@ struct ContentView: View {
                         Spacer().frame(width: 20)
                     }
                 }
-            })
-                .frame(height: 44)
-                .background(Color.gray)
+            }
+            .frame(height: 44)
+            .background(Color.gray)
 
             ScrollView {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 12) {
